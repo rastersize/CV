@@ -1,0 +1,54 @@
+\ProvidesPackage{cv-local-style}
+
+
+\usepackage{fontspec}
+\usepackage{wrapfig}
+\moderncvtheme[black]{classic}
+
+% DOCUMENT LAYOUT
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{2cm}
+\AtBeginDocument{\recomputelengths}
+
+
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+% Remove % to set to different fonts
+%\setromanfont[Mapping=tex-text]{Gill Sans}
+%\setromanfont[Mapping=tex-text]{Futura}
+%\setromanfont[Mapping=tex-text]{Helvetica Neue}
+%\setromanfont[Mapping=tex-text]{Baskerville}
+\setromanfont[Mapping=tex-text]{Adobe Garamond Pro}
+\setmonofont[Scale=0.8]{PragmataPro}
+%\setromanfont[Ligatures={Common},Numbers={OldStyle}]{Adobe Caslon Pro}
+
+% ---- CUSTOM AMPERSAND
+\newcommand{\amper}{{\itshape\& }}
+
+
+% There is probably a better way to solve this, but anyhow…
+\newcommand{\myfirstname}{Aron}
+\newcommand{\myfamilyname}{Cedercrantz}
+
+\newcommand{\myaddress}{Västergatan~16}
+\newcommand{\mycity}{Göteborg}
+\newcommand{\mypostalcode}{413~13}
+\newcommand{\mycitypostalcode}{\mycity,~\mypostalcode}
+
+\newcommand{\mymobile}{+46~(0)~70-649~72~89}
+\newcommand{\myemail}{aron@cedercrantz.se}
+\newcommand{\myhomepage}{http://aron.cedercrantz.se}
+
+
+% Personal Inofrmation
+\firstname{\myfirstname}
+\familyname{\myfamilyname}
+\address{\myaddress}{\mycitypostalcode}
+\mobile{\mymobile}
+\email{\myemail}
+\homepage{\myhomepage}
+
+%\title{CV}
+
+\nopagenumbers{}
+
