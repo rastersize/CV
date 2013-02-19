@@ -1,0 +1,128 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,letterpaper,final]{moderncv}
+\usepackage{cv-local-style}
+
+\definecolor{color0}{gray}{0.2} % Base color
+%\definecolor{color1}{RGB}{8,59,84} % Heading and extras color
+%\definecolor{color1}{HTML}{61417d} % Heading and extras color
+\definecolor{color2}{gray}{0.33} % Contact details color
+
+\begin{document}
+\makecvtitle
+\vspace{1.5cm}
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\begin{wrapfigure}{r}{4cm}
+	\vspace{-.5cm}
+	\includegraphics[width=4cm]{me}
+\end{wrapfigure}
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\section{Profil}
+	\newlength{\tempmaincolumnwidth}
+	\setlength{\tempmaincolumnwidth}{\maincolumnwidth}
+	\setlength{\maincolumnwidth}{11.5cm}
+
+	\cvitem{}{Jag läser sista året av min master inom interaktionsdesign. Mina styrkor är design av grafiska gränssnitt samt applikationsutveckling.}
+	\cvitem{}{Jag är mycket användarfokuserad, användarna kommer alltid först när jag designar något.}
+	\cvitem{}{Jag har fått beröm för så väl min design samt min förmåga att producera god kod.}
+	%
+	\setlength{\maincolumnwidth}{\tempmaincolumnwidth}
+	%
+	\cvitem{}{Jag är ambitiös, lugn och strukturerad.}
+	\cvitem{}{Älskar också att lära mig nya saker samt att dela med mig av mina kunskaper till nytta för vänner och kollegor.}
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\vspace{.5cm}
+\section{Utbildning}
+	\cventry{2009–}{Civilingenjörsprogrammet inom Informationsteknik}{Chalmers}{\mycity}{}{\normalsize
+		\begin{itemize}
+			\item Förväntad examen 2014.
+			\item Kandidatarbete ``Anteckningsapplikation för iPad'', rapport använd efterföljande år som exempelrapport för högsta betyget.
+			\item Master inom interaktionsdesign.
+			\item Urval av kurser: Graphical interfaces, Information visualization, Prototyping in interaction design, Interaction design of social media, Mobile computing.
+		\end{itemize}
+	}
+	\cventry{2007–2008}{Civilingenjörsprogrammet inom Datateknik}{Chalmers}{\mycity}{}{}
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\vspace{.5cm}
+\section{Kunskaper i urval} 
+	\cvitem{Språk}{Objective-C, C, Java, PHP, Python, Ruby, HTML, CSS \amper Haskell.}
+	\cvitem{Miljöer}{Cocoa, Cocoa Touch \amper Git.}
+	\cvitem{Design}{Photoshop, wireframing \amper sketching.}
+	%\cvitem{Metoder}{ideation osv.}
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\vspace{.5cm}
+\section{Extra}
+	\cvline{Fritid}{Experimenterar mycket med ny teknik såsom \emph{reactive functional programming} med Objective-C. Samt designar gränssnitt.}
+	\cvline{Blogg}{\url{http://aron.cedercrantz.com}}
+	\cvline{GitHub}{\url{https://github.com/rastersize}}
+	%\cvline{CDEvents}{Kod f\"{o}r OS X av mig, nyttjad av bland annat \emph{Verizon} – \url{https://github.com/rastersize/CDEvents}.}
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\newpage
+
+\makebox[0cm][l]{\Huge \color{color0}
+	\myfirstname~\myfamilyname
+}%
+\makebox[\textwidth][r]{\addressfont\color{color2}%
+	\begin{tabular}[b]{@{}r@{}}%
+		{\makenewline\addresssymbol\myaddress}\\
+		{\makenewline\mycitypostalcode}\\
+		{\makenewline\mobilesymbol\mymobile}\\
+		{\makenewline\emailsymbol\emaillink{\myemail}}\\
+		{\makenewline\homepagesymbol\httplink{\myhomepage}}%
+	\end{tabular}
+}%
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\vspace{2cm}
+\section{Arbetslivserfarenhet} 
+	\cventry{April 2008–}{1\textsuperscript{st}-line support}{Icomera AB}{\mycity}{}{\normalsize
+		\begin{itemize}
+			\item Övervaka, underhålla och besvara support-ärenden för Internet ombord på tåg (exempelvis SJ), bussar med mera.
+			\item Arbetat mycket med att få ordning på den interna dokumentations-wikin.
+			\item Heltidsarbete under studieuppehåll (2008-2009) därefter extra under studier samt lov.
+		\end{itemize}
+	}
+	\cventry{2006 \\ \amper~2007 Juni–Augusti}{Badplatsarbetare}{Tynnereds Fastighetsservice}{\mycity}{}{\normalsize
+		\begin{itemize}
+			\item Ansvar för att badplatsens var badvänlig.
+			\item Bistod badplatsgäster med allmän information samt förstahjälpen.
+		\end{itemize}
+	}
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\vspace{.5cm}
+\section{Spr\aa k}
+	\cvline{Svenska}{Modersmål, flytande.}
+	\cvline{Engelska}{Mycket god.}
+	
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\vspace{.5cm}
+\section{Personligt}
+	\cvline{}{Tycker om att laga mat.}
+	\cvline{}{Spelar badminton när tillfälle ges.}
+	\cvline{}{Umgås gärna med vänner och flickvän.}
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\vspace{.5cm}
+\section{Referenser lämans på begäran}
+
+
+
+\end{document}
