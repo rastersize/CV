@@ -1,0 +1,128 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,letterpaper,final]{moderncv}
+\usepackage{cv-local-style}
+
+\definecolor{color0}{gray}{0.2} % Base color
+%\definecolor{color1}{RGB}{8,59,84} % Heading and extras color
+%\definecolor{color1}{HTML}{61417d} % Heading and extras color
+\definecolor{color2}{gray}{0.33} % Contact details color
+
+\begin{document}
+\makecvtitle
+\vspace{1.5cm}
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\begin{wrapfigure}{r}{4cm}
+	\vspace{-.5cm}
+	\includegraphics[width=4cm]{me}
+\end{wrapfigure}
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\section{Profile}
+	\newlength{\tempmaincolumnwidth}
+	\setlength{\tempmaincolumnwidth}{\maincolumnwidth}
+	\setlength{\maincolumnwidth}{11.5cm}
+
+	\cvitem{}{I’m at the last year of my master's in interaction design My strengths include graphical interface design and application development.}
+	\cvitem{}{I am extremely user-focused, the user always comes first when I design.}
+	\cvitem{}{I’ve been praised for my design and ability to produce good code.}
+	%
+	%\setlength{\maincolumnwidth}{\tempmaincolumnwidth}
+	%
+	\cvitem{}{I’m ambitious, calm and structured.}
+	\cvitem{}{I love learning new things as well as sharing my knowledge for the benefit of friends and colleagues.}
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\vspace{.5cm}
+\section{Education}
+	\cventry{2009–}{Master of Science in Information Technology Programme}{Chalmers}{\mycity}{}{\normalsize
+		\begin{itemize}
+			\item Expected exam in 2014.
+			\item Bachelor thesis ``Note taking app for iPad'', used as sample report the following year for highest grade.
+			\item Master’s in interaction design.
+			\item Selection of courses: Graphical interfaces, Information visualization, Prototyping in interaction design, Interaction design of social media, Mobile computing.
+		\end{itemize}
+	}
+	\cventry{2007–2008}{Master of Science in Computer Science Programme}{Chalmers}{\mycity}{}{}
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\vspace{.5cm}
+\section{Skills} 
+	\cvitem{Languages}{Objective-C, C, Java, PHP, Python, Ruby, HTML, CSS \amper Haskell.}
+	\cvitem{Environments}{Cocoa, Cocoa Touch \amper Git.}
+	\cvitem{Design}{Photoshop, wireframing \amper sketching.}
+	%\cvitem{Metoder}{ideation osv.}
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\vspace{.5cm}
+\section{Extra}
+	\cvline{Free time}{Often experiments and tries out new technology such as  \emph{reactive functional programming} med Objective-C. Designs user interfaces.}
+	\cvline{Blog}{\url{http://aron.cedercrantz.com}}
+	\cvline{GitHub}{\url{https://github.com/rastersize}}
+	%\cvline{CDEvents}{Kod f\"{o}r OS X av mig, nyttjad av bland annat \emph{Verizon} – \url{https://github.com/rastersize/CDEvents}.}
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\newpage
+
+\makebox[0cm][l]{\Huge \color{color0}
+	\myfirstname~\myfamilyname
+}%
+\makebox[\textwidth][r]{\addressfont\color{color2}%
+	\begin{tabular}[b]{@{}r@{}}%
+		{\makenewline\addresssymbol\myaddress}\\
+		{\makenewline\mycitypostalcode}\\
+		{\makenewline\mobilesymbol\mymobile}\\
+		{\makenewline\emailsymbol\emaillink{\myemail}}\\
+		{\makenewline\homepagesymbol\httplink{\myhomepage}}%
+	\end{tabular}
+}%
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\vspace{2cm}
+\section{Progessional experience} 
+	\cventry{April 2008–}{1\textsuperscript{st}-line support}{Icomera AB}{\mycity}{}{\normalsize
+		\begin{itemize}
+			\item Monitor, maintain and answer support requests for Internet onboard trains (e.g. on SJ), busses etcetera.
+			\item Arbetat mycket med att få ordning på den interna dokumentations-wikin.
+			\item Fulltime work during study break (2008-2009) and then as an extra during semesters and holidays.
+		\end{itemize}
+	}
+	\cventry{2006 \\ \amper~2007 Juni–Augusti}{Bathing place worker}{Tynnereds Fastighetsservice}{\mycity}{}{\normalsize
+		\begin{itemize}
+			\item Responsible for the environment and soundness of the site.
+			\item Assisted bathing guests with general information and first aid.
+		\end{itemize}
+	}
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\vspace{.5cm}
+\section{Language}
+	\cvline{Swedish}{Mother tongue, fluent.}
+	\cvline{English}{Very good.} % Excellent  ?
+	
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\vspace{.5cm}
+\section{Personal}
+	\cvline{}{Likes to cook.}
+	\cvline{}{Plays badminton when when the opportunity arises.}
+	\cvline{}{Hanging out with friends.}
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+\vspace{.5cm}
+\section{References available upon request.}
+
+
+
+\end{document}
